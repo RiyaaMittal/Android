@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class first{
+            constructor(radius,height){
+                this.radius=radius;
+                this.height=height;
+            }
+            volumeofcy(){
+                var volume=(3.14*(this.radius*this.radius)*this.height);
+                return  "volume of cylinder=",volume;
+            }
+            areaofcircle(){
+                var area=(3.14*(this.radius*this.radius));
+                return "area of circle=",area;
+            }
+            perimeterofcircle(){
+                var peri=(2*3.14*this.radius);
+                return "perimeter of circle=",peri;
+            }
+        }
+        let a=new first(3,4);
+        console.log(a.volumeofcy());
+        console.log(a.areaofcircle());
+        console.log(a.perimeterofcircle());
+        
+       /*
+        let b=new first(4);
+        console.log(b.areaofcircle());
+
+        let c=new first( 0,3);
+        console.log(c.any());
+        console.log(c.perimeterofcircle());*/
+
+    </script>
+</body>
+</html>
